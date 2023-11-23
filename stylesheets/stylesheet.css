@@ -5,7 +5,7 @@ main {
     height: 75%;
 }
 body{
-    padding-top: 15%;
+    padding-top: 10%;
     background-image: url("../images/bg-intro-desktop.png");
     background-color: rgb(243, 110, 110);
     font-family: "Poppins", "sans-serif";
