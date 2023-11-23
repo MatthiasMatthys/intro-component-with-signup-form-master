@@ -9,6 +9,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700">
+  <script src="scripts/script.js"></script>
 
   <title>Frontend Mentor | Intro component with sign up form</title>
 
@@ -45,14 +46,15 @@
         Try it free 7 days then $20/mo. thereafter
       </div>
       <div class="formcontainer">
-        <form class="signform" action="submit">
+        <form class="signform" name="signform">
           <input type="text" id="fname" name="fname" placeholder="First Name">
           <input type="text" id="lname" name="lname" placeholder="Last Name">
           <input type="email" id="email" name="email" placeholder="Email Address">
           <input type="password" id="password" name="password" placeholder="Password">
-          <button>CLAIM YOUR FREE TRIAL</button>
+          <p style="font-size: 20px;" class="errorText" id="errorMessage"></p>
+          
         </form>
-
+        <button onclick="validateForm()">CLAIM YOUR FREE TRIAL</button>
          <p style="color: gray;">By clicking the button, you are agreeing to our<span style="color: red;"> Terms and Services </span></p>
       </div>
     </div>
